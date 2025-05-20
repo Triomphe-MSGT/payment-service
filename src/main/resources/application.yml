@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/payment_db
+    username: triomphe
+    password:
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update # (create, create-drop, update, validate)
+    show-sql: true
+    properties:
+      hibernate:
+        "[format_sql]": true #pour le formstage des donner sql(bonne lisibilité)
+
+  application:
+    name: payment-service
+
+server:
+  port: 8082
